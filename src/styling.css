@@ -762,3 +762,108 @@ ol li[data-details=新和英] details.glossary-text__details .glossary-text__sum
 .dict-group__tag-list::after {
   content: ") ";
 }
+
+/*
+ * --------------------
+ *  custom css
+ * --------------------
+ */
+
+.definition {
+  display: block !important;
+}
+
+#glossaries {
+  margin: 0 50px;
+}
+
+/* stylizes keywords contents */
+#glossaries .kv_kanji_known, #glossaries .kv_kana_known {
+  border: 3px solid #b6d7a2;
+  border-radius: 3px;
+}
+#glossaries .kv_kanji_mature, #glossaries .kv_kana_mature {
+  border: 3px solid #569056;
+  border-radius: 3px;
+}
+#glossaries .kv_kanji_known, #glossaries .kv_kana_known {
+  border: 3px solid #b6d7a2;
+  border-radius: 3px;
+}
+#glossaries .kv_kanji_mature, #glossaries .kv_kana_mature {
+  border: 3px solid #569056;
+  border-radius: 3px;
+}
+#glossaries .kv_confuse rb {
+  border-bottom: 2px solid tomato;
+  padding: 1.5px;
+}
+#glossaries .kv_likely rb {
+  border-bottom: 2px solid #f0c674;
+  padding: 1.5px;
+  /* yellow*/
+}
+#glossaries .kv_unique rb {
+  border-bottom: 2px solid #6abedb;
+  padding: 1.5px;
+  /* Blue */
+}
+#glossaries a.keyword {
+  color: white;
+}
+#glossaries .kwbox {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 14px -10px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+#glossaries .keyword:hover {
+  color: #80aaff;
+}
+#glossaries .keyword {
+  background: #303030;
+  color: white;
+  padding: 18px 0 5px 0;
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+  margin-top: 0;
+}
+#glossaries .keyword-vocab {
+  white-space: pre-line;
+  display: block;
+  padding: 15px 10px 10px;
+  line-height: 2.3em;
+  background-color: #f9f9f9;
+  font-size: 13px;
+}
+#glossaries a.keyword-vocab {
+  color: black;
+}
+#glossaries .kanjivocab {
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
+#glossaries .kanji-vocab span {
+  display: inline-block;
+}
+#glossaries .kwbox > p {
+  border: 3px;
+  padding-top: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+#glossaries .kw-separator {
+  display: none;
+}
+#glossaries a {
+  text-decoration: none;
+}
+
+#glossaries .keyword ruby rt, #glossaries .keyword-vocab ruby rt {
+  opacity: 100;
+}
