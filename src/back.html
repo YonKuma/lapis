@@ -335,6 +335,7 @@
     if (`{{SelectionText}}`) dictNames.push("Text Selection");
     if (`{{MainDefinition}}` && isAllHtml(`{{MainDefinition}}`) == false) dictNames.push("Primary Definition");
     if (`{{Glossary}}`) dictNames.push("Glossaries");
+    if (`{{Keywords}}`) dictNames.push("Keywords");
 
     const definitionContainer = document.querySelector(
       ".main-def > .definition",
@@ -359,6 +360,8 @@
     }
     else if (dictNames[currentIndex].toLowerCase().includes("glossar"))
       definitionContainer.innerHTML = `<div id="glossaries">{{Glossary}}</div>`;
+    else if (dictNames[currentIndex].toLowerCase().includes("keyword"))
+      definitionContainer.innerHTML = `<div id="glossaries">{{furigana:Keywords}}</div>`;
   }
 
   function setUpDefToggle() {
