@@ -902,3 +902,13 @@ ol
 #glossaries .keyword ruby rt, #glossaries .keyword-vocab ruby rt {
   opacity: 100;
 }
+
+.links ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.links ul li {
+  line-height: 1.25;
+  font-size: medium;
+}
