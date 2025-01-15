@@ -876,3 +876,17 @@ ol li[data-details="新和英"] details.glossary-text__details .glossary-text__s
  *  custom css
  * --------------------
  */
+ 
+/*
+ *  Links
+ */
+
+.links ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.links ul li {
+  line-height: 1.25;
+  font-size: medium;
+}
