@@ -4,7 +4,7 @@
 <main>
     <!--------- Vocab card ---------->
     {{^IsSentenceCard}} {{^IsWordAndSentenceCard}} {{^IsClickCard}}
-    <div lang="ja" class="front-vocab">{{Expression}}</div>
+    <div lang="ja" class="front-vocab">{{kanji:Expression}}</div>
     {{/IsClickCard}} {{/IsWordAndSentenceCard}} {{/IsSentenceCard}}
 
     <!------- Sentence card --------->
@@ -17,7 +17,7 @@
 
     <!--------- Hint card ----------->
     {{#IsWordAndSentenceCard}}
-    <div lang="ja" class="front-vocab">{{Expression}}</div>
+    <div lang="ja" class="front-vocab">{{kanji:Expression}}</div>
     <div id="hint">
         {{#SentenceFurigana}} {{kanji:SentenceFurigana}} {{/SentenceFurigana}}
         {{^SentenceFurigana}} {{kanji:Sentence}} {{/SentenceFurigana}}
@@ -27,7 +27,7 @@
     <!-------- Click card ----------->
     {{#IsClickCard}}
     <div id="click" class="tappable">
-        <div lang="ja" class="front-vocab">{{Expression}}</div>
+        <div lang="ja" class="front-vocab">{{kanji:Expression}}</div>
     </div>
     {{/IsClickCard}}
 
